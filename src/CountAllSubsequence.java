@@ -8,11 +8,11 @@ public class CountAllSubsequence {
         String s = sc.next();
         int[] dp = new int[s.length()];
         Arrays.fill(dp,-1);
-        int count = countAllSubsequences(s,0,"", dp);
+        int count = countAllSubsequences(s,0, dp);
         System.out.println(count);
     }
 
-    private static int countAllSubsequences(String s, int index, String cur, int[] dp) {
+    private static int countAllSubsequences(String s, int index, int[] dp) {
         if(index == s.length()){
             return 1;
         }
@@ -21,8 +21,8 @@ public class CountAllSubsequence {
             return dp[index];
         }
 
-        int notPick = countAllSubsequences(s,index+1,cur, dp);
-        int pick = countAllSubsequences(s, index+1, cur + s.charAt(index), dp);
+        int notPick = countAllSubsequences(s,index+1, dp);
+        int pick = countAllSubsequences(s, index+1, dp);
         return dp[index] = notPick + pick;
     }
 
