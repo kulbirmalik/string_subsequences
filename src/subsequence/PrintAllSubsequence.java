@@ -1,3 +1,5 @@
+package subsequence;
+
 import java.util.*;
 
 public class PrintAllSubsequence {
