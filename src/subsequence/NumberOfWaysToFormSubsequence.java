@@ -1,4 +1,6 @@
-package subsequence;// Similar to count no. of given targets (subsequence) in the string s
+package subsequence;
+
+// Similar to count no. of given targets (subsequence) in the string s
 // For eg - We have subsequence -> '103301'
 // We need to form -> '301' , In how many ways can this be done.
 
